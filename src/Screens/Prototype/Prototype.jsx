@@ -27,6 +27,13 @@ const Prototype = () => {
         // console.log("Code:", code);
     };
 
+    const handleKeyDown = (e) => {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            GetDetails(selectedOption, code);
+        }
+    };
+
     const GetDetails = (selectedOption, code) => {
         console.log("selectedOption", selectedOption);
         console.log("code", code);
@@ -57,7 +64,7 @@ const Prototype = () => {
 
                 <Zoom>
 
-                    <div className="prototype_header_container">
+                    <div className="prototype_header_container" onKeyDown={handleKeyDown}>
                         <div className="prototype_prompt">
                             Enter Data
                         </div>

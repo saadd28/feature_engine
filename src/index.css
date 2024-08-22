@@ -17,6 +17,8 @@
   --color-text: white;
   --color-subtext: #ff8a71;
   --color-main: #23c8ce;
+  --color-main-border: #1da5aa;
+  --color-main-border-light: #22c0c6;
   --color-shipping-btn: #C1F651;
   --color-cancel-btn: rgb(241, 39, 39);
 }
