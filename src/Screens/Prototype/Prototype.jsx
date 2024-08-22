@@ -1,5 +1,4 @@
 import { getcodedetails } from '../../api/api';
-import { Cloud, Logo } from '../../Assets';
 import './Prototype.css'
 
 import React, { useState } from 'react';
@@ -8,19 +7,10 @@ import { Fade, Zoom } from "react-reveal";
 const Prototype = () => {
     const options = [
         { value: 'drg', label: 'DRG' },
-        { value: 'cpt', label: 'CPT' }
+        { value: 'cpt', label: 'CPT' },
+        { value: 'icd', label: 'ICD' },
     ]
 
-    // const response = {
-    //     "HCPCS": "33120",
-    //     "DESCRIPTION": "Removal of heart lesion With RAAST, your Mobile Number is your Bank Account Number!",
-    //     "STATUS CODE": "A",
-    //     "Outpatient RVU": 61.46,
-    //     "Inpatient RVU": 61.46,
-    //     "IN_OUT_RVU": 122.92,
-    //     "GLOB_DAYS": "90",
-    //     "Coding System": "CPT"
-    // }
     let [selectedOption, setSelectedOption] = useState(options[0].value);
     let [code, setCode] = useState("");
     let [response, setResponse] = useState();
